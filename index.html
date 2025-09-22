@@ -7,32 +7,109 @@
 </head>
 <body>
     <header>
-        <nav>
-            <!-- Barra de navegación -->
+        <nav class="navbar">
+            <img src="starter-code/images/logo-bookmark.svg" alt="Bookmark Logo">
+            <ul>
+                <li><a href="#features">FEATURES</a></li>
+                <li><a href="#pricing">PRICING</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+            </ul>
+            <button class="btn-login">LOGIN</button>
         </nav>
     </header>
     <main>
-        <section>
-            <!-- A Simple Bookmark Manager -->
+        <section class="hero">
+            <h1>A Simple Bookmark Manager</h1>
+            <p>A clean and simple interface to organize your favourite websites. Open a new browser tab and see your sites load instantly. Try it for free</p>
+            <button class="btn-get-started">Get it on Chrome</button>
+            <button class="btn-get-started">Get it on Firefox</button>
+            <img src="starter-code/images/illustration-hero.svg" alt="Illustration Hero">
         </section>
-        <section>
-            <!-- Features -->
+        <section class="features" id="features">
+            <h2>Features</h2>
+            <p>Our aim is to make it quick and easy for you to access your favourite websites. Your bookmarks sync between your devices so you can access them on the go.</p>
+            <nav class="tabs">
+                <button class="tab active">Simple Bookmarking</button>
+                <button class="tab">Speedy Searching</button>
+                <button class="tab">Easy Sharing</button>
+            </nav>
         </section>
-        <section>
-            <!-- Bookmark in one click -->
+        <section class="feature-detail">
+            <img src="starter-code/images/illustration-features-tab-1.svg" alt="Bookmark in one click">
+            <h2>Bookmark in one click</h2>
+            <p>Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favourite sites.</p>
+            <button class="btn-more-info">More Info</button>
         </section>
-        <section>
-            <!-- Download the extension -->
+        <section class="download">
+            <h2>Download the extension</h2>
+            <p>We’ve got more browsers in the pipeline. Please do let us know if you’ve got a favourite you’d like us to prioritize.</p>
+            <div class="cards">
+                <div class="card">
+                    <img src="starter-code/images/logo-chrome.svg" alt="Chrome Logo">
+                    <h3>Add to Chrome</h3>
+                    <p>Minimum version 62</p>
+                    <button class="btn-add-chrome">Add & Install Extension</button>
+                </div>
+                <div class="card">
+                    <img src="starter-code/images/logo-firefox.svg" alt="Firefox Logo">
+                    <h3>Add to Firefox</h3>
+                    <p>Minimum version 55</p>
+                    <button class="btn-add-firefox">Add & Install Extension</button>
+                </div>
+                <div class="card">
+                    <img src="starter-code/images/logo-opera.svg" alt="Opera Logo">
+                    <h3>Add to Opera</h3>
+                    <p>Minimum version 46</p>
+                    <button class="btn-add-opera">Add & Install Extension</button>
+                </div>
+            </div>
         </section>
-        <section>
-            <!-- Frequently Asked Questions -->
+        <section class="faq">
+            <h2>Frequently Asked Questions</h2>
+            <p>Here are some of our FAQs. If you have any other questions you’d like answered please feel free to email us.</p>
+            <div class="faq items">
+                <details>
+                    <summary>What is Bookmark?</summary>
+                    <p>Bookmark is a free online service that allows you to manage and organize your favorite websites in one place.</p>
+                </details>
+                <details>
+                    <summary>How can I request a new browser?</summary>
+                    <p>You can request a new browser by contacting our support team through the contact form on our website.</p>
+                </details>
+                <details>
+                    <summary>Is there a mobile app?</summary>
+                    <p>Yes, we have a mobile app available for both iOS and Android devices.</p>
+                </details>
+                <details>
+                    <summary>What about other Chromium browsers?</summary>
+                    <p>We are working on adding support for other Chromium-based browsers and will update our users as soon as they are available.</p>
+                </details>
+            </div>
+            <button class="btn-more-info">More Info</button>
         </section>
-        <section>
-            <!-- Formulario Stay up-to-date -->
+        <section class="newsletter">
+            <p>35,000+ already joined</p>
+            <h2>Stay up-to-date with what we’re doing</h2>
+            <p>Join our mailing list to stay up to date with the latest news and updates.</p>
+            <form class="contact-form">
+                <input type="email" placeholder="Enter your email address" required>
+                <button type="submit" class="btn-contact">Contact Us</button>
+            </form>
         </section>
     </main>
     <footer>
-        <!-- Información, enlaces e iconos sociales -->
+        <nav class="footer-nav">
+            <img src="starter-code/images/logo-bookmark.svg" alt="Bookmark Logo">
+            <ul>
+                <li><a href="#features">FEATURES</a></li>
+                <li><a href="#pricing">PRICING</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+            </ul>
+        </nav>
+        <div class="social-icons">
+            <a href="#"><img src="starter-code/images/icon-facebook.svg" alt="Facebook Icon"></a>
+            <a href="#"><img src="starter-code/images/icon-twitter.svg" alt="Twitter Icon"></a>
+        </div>
     </footer>
 </body>
 </html>
