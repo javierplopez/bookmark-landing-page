@@ -1,0 +1,48 @@
+.faq {
+    padding: $spacing-3xl 0;
+}
+
+.accordion {
+    max-width: 45rem;
+    margin: 0 auto $spacing-2xl;
+
+    &_item + &_item {
+        border-top: 1px solid $color-text;
+    }
+
+    &_trigger {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: $spacing-lg 0;
+        color: $color-heading;
+        text-align: left;
+        transition: color $transition-base;
+    }
+
+    &_trigger:hover {
+        color: $color-secondary;
+    }
+
+    &_trigger img {
+        transition: transform $transition-base;
+    }
+
+    &_trigger[aria-expanded='true'] img {
+        transform: rotate(180deg);
+    }
+
+    &_content {
+        padding-bottom: $spacing-lg;
+        color: $color-text;
+    }
+
+    &_content[hidden] {
+        display: none;
+    }
+}
+
+.faq_cta {
+    text-align: center;
+}
