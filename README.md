@@ -1,4 +1,4 @@
-# 📑 Bookmark Landing Page
+# 📑 IT Academy - Sprint 1 - Bookmark Landing Page
 
 Landing page developed as part of **IT Academy Sprint 1**, with the goal of practicing and mastering **web layout best practices, responsive design, and accessibility**.  
 
