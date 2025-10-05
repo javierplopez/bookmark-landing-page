@@ -32,21 +32,21 @@
 <main role="main">
     <!-- Hero -->
     <section class="py-16 relative-overflow-hidden"> <!-- Adjusted class for overflow -->
-    <div class="max-w-6xl mx-auto flex flex-col-reverse md:flex-row items-center px-6 gap-12 relative z-10"> <!-- Added z-10 to ensure content is above decorative shape -->
-        <div class="flex-1 text-center md:text-left">
+    <div class="max-w-6xl mx-auto flex flex-col-reverse md:flex-row items-center px-6 gap-8 md:gap-12 relative z-10"> <!-- Adjusted gap for mobile -->
+        <div class="flex-1 text-center md:text-left mt-6 md:mt-0"> <!-- Added margin top for mobile -->
         <h1 class="text-4xl md:text-5xl font-medium text-gray-900 mb-6">A Simple Bookmark Manager</h1>
         <p class="text-gray-500 mb-8 max-w-md mx-auto md:mx-0">
             A clean and simple interface to organize your favourite websites. Open a new 
             browser tab and see your sites load instantly. Try it for free.
         </p>
         <div class="flex justify-center md:justify-start gap-4">
-            <a href="#" class="px-6 py-3 bg-blue-600 text-white rounded-md shadow hover:bg-blue-700">Get it on Chrome</a>
+            <a href="#" class="px-6 py-3 bg-[#5267DF] text-white rounded-md shadow hover:bg-blue-700">Get it on Chrome</a>
             <a href="#" class="px-6 py-3 bg-gray-100 text-gray-700 rounded-md shadow hover:bg-gray-200">Get it on Firefox</a>
         </div>
         </div>
         <div class="flex-1 relative"> <!-- Added relative for positioning -->
-        <img src="src/images/illustration-hero.svg" alt="Bookmark illustration">
-        <div class="absolute -bottom-12 -left-24 w-[500px] h-[300px] bg-blue-600 rounded-l-full -z-10"></div> <!-- Decorative background shape -->
+        <img src="src/images/illustration-hero.svg" alt="Illustration hero" class="relative z-10">
+        <div class="absolute right-[-20%] bottom-[-10%] md:right-[-10%] w-[120%] h-[80%] bg-[#5267DF] rounded-l-full -z-10"></div> <!-- Decorative background shape -->
         </div>
     </div>
     </section>
@@ -61,17 +61,26 @@
         </p>
 
         <!-- Tabs -->
-        <div class="flex justify-center space-x-8 border-b">
-        <button class="pb-4 border-b-4 border-red-500 text-gray-900 font-medium">Simple Bookmarking</button>
-        <button class="pb-4 text-gray-500 hover:text-red-500">Speedy Searching</button>
-        <button class="pb-4 text-gray-500 hover:text-red-500">Easy Sharing</button>
+        <div class="flex flex-col md:flex-row justify-center md:space-x-8 border-b border-gray-200">
+        <button class="relative py-3 md:py-4 text-gray-900 font-medium border-b border-gray-200 md:border-none">
+            <span class="relative block">Simple Bookmarking</span>
+            <div class="absolute bottom-0 left-0 w-full h-1 bg-red-500"></div>
+        </button>
+        <button class="relative py-3 md:py-4 text-gray-500 hover:text-red-500 border-b border-gray-200 md:border-none">
+            <span class="relative block">Speedy Searching</span>
+            <div class="absolute bottom-0 left-0 w-full h-1 bg-transparent"></div>
+        </button>
+        <button class="relative py-3 md:py-4 text-gray-500 hover:text-red-500 border-b border-gray-200 md:border-none">
+            <span class="relative block">Easy Sharing</span>
+            <div class="absolute bottom-0 left-0 w-full h-1 bg-transparent"></div>
+        </button>
         </div>
 
         <!-- Panels -->
         <div class="mt-12 flex flex-col md:flex-row items-center gap-12">
-        <div class="flex-1 relative"> <!-- Added relative for positioning -->
-            <img src="src/images/illustration-features-tab-1.svg" alt="Feature illustration">
-            <div class="absolute -bottom-12 -right-24 w-[500px] h-[300px] bg-blue-600 rounded-r-full -z-10"></div> <!-- Decorative background shape -->
+        <div class="relative flex-1"> <!-- Illustration container -->
+            <img src="src/images/illustration-features-tab-1.svg" alt="Feature illustration" class="relative z-10 w-full max-w-md mx-auto">
+            <div class="absolute top-[20%] md:-left-[30%] w-[140%] md:w-[80%] h-[80%] bg-[#5267DF] rounded-r-full -z-10"></div>
         </div>
         <div class="flex-1 text-center md:text-left">
             <h3 class="text-2xl font-medium text-gray-900 mb-4">Bookmark in one click</h3>
@@ -79,7 +88,7 @@
             Organize your bookmarks however you like. Our simple drag-and-drop interface 
             gives you complete control over how you manage your favourite sites.
             </p>
-            <a href="#" class="px-6 py-3 bg-blue-600 text-white rounded-md shadow hover:bg-blue-700">More Info</a>
+            <a href="#" class="px-6 py-3 bg-[#5267DF] text-white rounded-md shadow hover:bg-blue-700">More Info</a>
         </div>
         </div>
     </div>
@@ -95,35 +104,35 @@
         </p>
 
         <div class="grid md:grid-cols-3 gap-6 mt-12">
-        <article class="bg-white shadow-md rounded-lg p-6 flex flex-col items-center"> <!-- Added bg-white for contrast -->
+        <article class="bg-white shadow-md rounded-lg p-6 flex flex-col items-center md:self-start"> <!-- Chrome card -->
             <img src="src/images/logo-chrome.svg" alt="Chrome logo" class="mx-auto mb-6">
             <h3 class="text-xl font-medium text-gray-900">Add to Chrome</h3>
             <p class="text-gray-500 mb-4">Minimum version 62</p>
             <img src="src/images/bg-dots.svg" alt="Background dots" class="w-full mb-6">
-            <a href="#" class="block w-full px-6 py-3 border-2 border-blue-600 bg-blue-600 text-white rounded-md shadow hover:bg-white hover:text-blue-600">Add & Install Extension</a> <!-- Changed button style for Chrome -->
+            <a href="#" class="block w-full px-6 py-3 border-2 border-[#5267DF] bg-[#5267DF] text-white rounded-md shadow hover:bg-white hover:text-[#5267DF]">Add & Install Extension</a>
         </article>
 
-        <article class="bg-white shadow-md rounded-lg p-6 flex flex-col items-center mt-8"> <!-- Added bg-white for contrast -->
+        <article class="bg-white shadow-md rounded-lg p-6 flex flex-col items-center mt-6 md:mt-0 md:self-start md:translate-y-8"> <!-- Firefox card -->
             <img src="src/images/logo-firefox.svg" alt="Firefox logo" class="mx-auto mb-6">
             <h3 class="text-xl font-medium text-gray-900">Add to Firefox</h3>
             <p class="text-gray-500 mb-4">Minimum version 55</p>
             <img src="src/images/bg-dots.svg" alt="Background dots" class="w-full mb-6">
-            <a href="#" class="block w-full px-6 py-3 border-2 border-blue-600 bg-blue-600 text-white rounded-md shadow hover:bg-white hover:text-blue-600">Add & Install Extension</a> <!-- Changed button style for Firefox -->
+            <a href="#" class="block w-full px-6 py-3 border-2 border-[#5267DF] bg-[#5267DF] text-white rounded-md shadow hover:bg-white hover:text-[#5267DF]">Add & Install Extension</a>
         </article>
 
-        <article class="bg-white shadow-md rounded-lg p-6 flex flex-col items-center mt-16"> <!-- Added bg-white for contrast -->
+        <article class="bg-white shadow-md rounded-lg p-6 flex flex-col items-center mt-6 md:mt-0 md:self-start md:translate-y-16"> <!-- Opera card -->
             <img src="src/images/logo-opera.svg" alt="Opera logo" class="mx-auto mb-6">
             <h3 class="text-xl font-medium text-gray-900">Add to Opera</h3>
             <p class="text-gray-500 mb-4">Minimum version 46</p>
             <img src="src/images/bg-dots.svg" alt="Background dots" class="w-full mb-6">
-            <a href="#" class="block w-full px-6 py-3 border-2 border-blue-600 bg-blue-600 text-white rounded-md shadow hover:bg-white hover:text-blue-600">Add & Install Extension</a> <!-- Changed button style for Opera -->
+            <a href="#" class="block w-full px-6 py-3 border-2 border-[#5267DF] bg-[#5267DF] text-white rounded-md shadow hover:bg-white hover:text-[#5267DF]">Add & Install Extension</a>
         </article>
         </div>
     </div>
     </section>
 
     <!-- FAQ -->
-    <section class="py-20 bg-gray-50">
+    <section class="py-20"> <!-- Removed bg-gray-50 class -->
     <div class="max-w-3xl mx-auto px-6 text-center">
         <h2 class="text-3xl font-medium text-gray-900 mb-4">Frequently Asked Questions</h2>
         <p class="text-gray-500 mb-12">
@@ -166,13 +175,13 @@
         </div>
 
         <div class="mt-12">
-        <a href="#" class="px-6 py-3 bg-blue-600 text-white rounded-md shadow hover:bg-blue-700">More Info</a>
+        <a href="#" class="px-6 py-3 bg-[#5267DF] text-white rounded-md shadow hover:bg-blue-700">More Info</a>
         </div>
     </div>
     </section>
 
     <!-- Newsletter -->
-    <section class="py-20 bg-blue-600 text-center text-white">
+    <section class="py-20 bg-[#5267DF] text-center text-white">
     <div class="max-w-2xl mx-auto px-6">
         <p class="uppercase tracking-widest mb-2">35,000+ already joined</p>
         <h2 class="text-3xl font-medium mb-8">Stay up-to-date with what we're doing</h2>
@@ -188,14 +197,16 @@
 <!-- Footer -->
 <footer role="contentinfo" class="bg-gray-900 text-white py-10">
     <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center px-6 gap-6">
-    <a href="/" aria-label="Bookmark home">
-        <img src="src/images/logo-bookmark-2.svg" alt="Bookmark logo" width="148" height="25">
-    </a>
-    <nav aria-label="Footer navigation" class="flex space-x-6">
-        <a href="#features" class="hover:text-red-500">FEATURES</a>
-        <a href="#pricing" class="hover:text-red-500">PRICING</a>
-        <a href="#contact" class="hover:text-red-500">CONTACT</a>
-    </nav>
+    <div class="flex flex-col md:flex-row md:gap-16 items-center md:items-start">
+        <a href="/" aria-label="Bookmark home">
+            <img src="src/images/logo-bookmark-2.svg" alt="Bookmark logo" width="148" height="25">
+        </a>
+        <nav aria-label="Footer navigation" class="flex flex-col md:flex-row space-y-6 md:space-y-0 md:space-x-6 mt-8 md:mt-0">
+            <a href="#features" class="hover:text-red-500">FEATURES</a>
+            <a href="#pricing" class="hover:text-red-500">PRICING</a>
+            <a href="#contact" class="hover:text-red-500">CONTACT</a>
+        </nav>
+    </div>
     <div class="flex space-x-4">
         <a href="#" aria-label="Facebook" class="hover:opacity-75">
         <img src="src/images/icon-facebook.svg" alt="Facebook icon">
