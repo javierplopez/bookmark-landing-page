@@ -23,17 +23,44 @@
         <a href="#login" class="px-5 py-2 border-2 border-red-500 text-red-500 rounded-md hover:bg-red-500 hover:text-white text-sm tracking-wide">LOGIN</a>
     </nav>
     <!-- Mobile button -->
-    <button class="md:hidden" aria-expanded="false" aria-controls="primary-navigation" aria-label="Toggle menu">
-        <img src="src/images/icon-hamburger.svg" alt="Hamburger icon" class="w-6 h-6">
+    <button id="menu-toggle" class="md:hidden" aria-expanded="false" aria-controls="primary-navigation" aria-label="Toggle menu">
+        <img src="src/images/icon-hamburger.svg" alt="Hamburger icon" class="w-6 h-6" id="menu-icon">
+        <img src="src/images/icon-close.svg" alt="Close icon" class="w-6 h-6 hidden" id="close-icon">
     </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="fixed inset-0 bg-gray-900/95 z-50 hidden">
+        <div class="min-h-screen flex flex-col px-8 pt-10">
+            <div class="flex justify-between items-center border-b border-gray-600/25 pb-8">
+                <img src="src/images/logo-bookmark-2.svg" alt="Bookmark logo" class="h-[30px]">
+                <button id="menu-close" class="text-gray-500 hover:text-gray-400">
+                    <img src="src/images/icon-close.svg" alt="Close icon" class="w-7 h-7">
+                </button>
+            </div>
+            <nav class="flex flex-col text-center mt-10">
+                <a href="#features" class="text-white text-lg tracking-[0.2em] uppercase py-5 border-b border-gray-600/25">FEATURES</a>
+                <a href="#pricing" class="text-white text-lg tracking-[0.2em] uppercase py-5 border-b border-gray-600/25">PRICING</a>
+                <a href="#contact" class="text-white text-lg tracking-[0.2em] uppercase py-5 border-b border-gray-600/25">CONTACT</a>
+                <a href="#login" class="text-white text-lg tracking-[0.2em] uppercase mt-5 py-3 border-2 border-white rounded-md hover:bg-white hover:text-gray-900 transition-colors">LOGIN</a>
+            </nav>
+            <div class="flex justify-center space-x-10 mt-auto mb-12">
+                <a href="#" aria-label="Facebook" class="hover:opacity-75 transition-opacity">
+                    <img src="src/images/icon-facebook.svg" alt="Facebook icon" class="w-6">
+                </a>
+                <a href="#" aria-label="Twitter" class="hover:opacity-75 transition-opacity">
+                    <img src="src/images/icon-twitter.svg" alt="Twitter icon" class="w-6">
+                </a>
+            </div>
+        </div>
     </div>
 </header>
 
 <main role="main">
     <!-- Hero -->
-    <section class="py-16 relative-overflow-hidden"> <!-- Adjusted class for overflow -->
-    <div class="max-w-6xl mx-auto flex flex-col-reverse md:flex-row items-center px-6 gap-8 md:gap-12 relative z-10"> <!-- Adjusted gap for mobile -->
-        <div class="flex-1 text-center md:text-left mt-6 md:mt-0"> <!-- Added margin top for mobile -->
+    <section class="py-16 relative-overflow-hidden">
+    <div class="max-w-6xl mx-auto flex flex-col-reverse md:flex-row items-center px-6 gap-8 md:gap-12 relative z-10">
+        <div class="flex-1 text-center md:text-left mt-6 md:mt-0">
         <h1 class="text-4xl md:text-5xl font-medium text-gray-900 mb-6">A Simple Bookmark Manager</h1>
         <p class="text-gray-500 mb-8 max-w-md mx-auto md:mx-0">
             A clean and simple interface to organize your favourite websites. Open a new 
@@ -44,16 +71,16 @@
             <a href="#" class="px-6 py-3 bg-gray-100 text-gray-700 rounded-md shadow hover:bg-gray-200">Get it on Firefox</a>
         </div>
         </div>
-        <div class="flex-1 relative"> <!-- Added relative for positioning -->
+        <div class="flex-1 relative">
         <img src="src/images/illustration-hero.svg" alt="Illustration hero" class="relative z-10">
-        <div class="absolute right-[-20%] bottom-[-10%] md:right-[-10%] w-[120%] h-[80%] bg-[#5267DF] rounded-l-full -z-10"></div> <!-- Decorative background shape -->
+        <div class="absolute right-[-20%] bottom-[-10%] md:right-[-10%] w-[120%] h-[80%] bg-[#5267DF] rounded-l-full -z-10"></div>
         </div>
     </div>
     </section>
 
     <!-- Features -->
-    <section id="features" class="py-20 relative overflow-hidden"> <!-- Added relative and overflow-hidden -->
-    <div class="max-w-4xl mx-auto px-6 text-center relative z-10"> <!-- Added z-10 -->
+    <section id="features" class="py-20 relative overflow-hidden">
+    <div class="max-w-4xl mx-auto px-6 text-center relative z-10">
         <h2 class="text-3xl font-medium text-gray-900 mb-4">Features</h2>
         <p class="text-gray-500 mb-12">
         Our aim is to make it quick and easy for you to access your favourite websites. 
@@ -78,7 +105,7 @@
 
         <!-- Panels -->
         <div class="mt-12 flex flex-col md:flex-row items-center gap-12">
-        <div class="relative flex-1"> <!-- Illustration container -->
+        <div class="relative flex-1">
             <img src="src/images/illustration-features-tab-1.svg" alt="Feature illustration" class="relative z-10 w-full max-w-md mx-auto">
             <div class="absolute top-[20%] md:-left-[30%] w-[140%] md:w-[80%] h-[80%] bg-[#5267DF] rounded-r-full -z-10"></div>
         </div>
@@ -104,7 +131,7 @@
         </p>
 
         <div class="grid md:grid-cols-3 gap-6 mt-12">
-        <article class="bg-white shadow-md rounded-lg p-6 flex flex-col items-center md:self-start"> <!-- Chrome card -->
+        <article class="bg-white shadow-md rounded-lg p-6 flex flex-col items-center md:self-start">
             <img src="src/images/logo-chrome.svg" alt="Chrome logo" class="mx-auto mb-6">
             <h3 class="text-xl font-medium text-gray-900">Add to Chrome</h3>
             <p class="text-gray-500 mb-4">Minimum version 62</p>
@@ -112,7 +139,7 @@
             <a href="#" class="block w-full px-6 py-3 border-2 border-[#5267DF] bg-[#5267DF] text-white rounded-md shadow hover:bg-white hover:text-[#5267DF]">Add & Install Extension</a>
         </article>
 
-        <article class="bg-white shadow-md rounded-lg p-6 flex flex-col items-center mt-6 md:mt-0 md:self-start md:translate-y-8"> <!-- Firefox card -->
+        <article class="bg-white shadow-md rounded-lg p-6 flex flex-col items-center mt-6 md:mt-0 md:self-start md:translate-y-8">
             <img src="src/images/logo-firefox.svg" alt="Firefox logo" class="mx-auto mb-6">
             <h3 class="text-xl font-medium text-gray-900">Add to Firefox</h3>
             <p class="text-gray-500 mb-4">Minimum version 55</p>
@@ -120,7 +147,7 @@
             <a href="#" class="block w-full px-6 py-3 border-2 border-[#5267DF] bg-[#5267DF] text-white rounded-md shadow hover:bg-white hover:text-[#5267DF]">Add & Install Extension</a>
         </article>
 
-        <article class="bg-white shadow-md rounded-lg p-6 flex flex-col items-center mt-6 md:mt-0 md:self-start md:translate-y-16"> <!-- Opera card -->
+        <article class="bg-white shadow-md rounded-lg p-6 flex flex-col items-center mt-6 md:mt-0 md:self-start md:translate-y-16">
             <img src="src/images/logo-opera.svg" alt="Opera logo" class="mx-auto mb-6">
             <h3 class="text-xl font-medium text-gray-900">Add to Opera</h3>
             <p class="text-gray-500 mb-4">Minimum version 46</p>
@@ -132,7 +159,7 @@
     </section>
 
     <!-- FAQ -->
-    <section class="py-20"> <!-- Removed bg-gray-50 class -->
+    <section class="py-20">
     <div class="max-w-3xl mx-auto px-6 text-center">
         <h2 class="text-3xl font-medium text-gray-900 mb-4">Frequently Asked Questions</h2>
         <p class="text-gray-500 mb-12">
@@ -188,7 +215,7 @@
         <form action="#" method="POST" novalidate class="flex flex-col md:flex-row gap-4">
         <input type="email" placeholder="Enter your email address"
             class="flex-1 px-4 py-3 rounded-md text-gray-900 border focus:ring-2 focus:ring-red-500 focus:outline-none bg-white" required>
-        <button type="submit" class="px-6 py-3 border-2 border-red-500 bg-red-500 text-white rounded-md hover:bg-white hover:text-red-500">Contact Us</button> <!-- Changed button text to "Contact Us" -->
+        <button type="submit" class="px-6 py-3 border-2 border-red-500 bg-red-500 text-white rounded-md hover:bg-white hover:text-red-500">Contact Us</button>
         </form>
     </div>
     </section>
@@ -217,5 +244,7 @@
     </div>
     </div>
 </footer>
+
+    <script src="src/js/main.js"></script>
 </body>
 </html>
