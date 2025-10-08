@@ -89,24 +89,25 @@
 
         <!-- Tabs -->
         <div class="flex flex-col md:flex-row justify-center md:space-x-8 border-b border-gray-200">
-        <button class="relative py-3 md:py-4 text-gray-900 font-medium border-b border-gray-200 md:border-none">
+        <button id="tab-1" class="tab-button relative py-3 md:py-4 text-gray-900 font-medium border-b border-gray-200 md:border-none active" data-tab="1">
             <span class="relative block">Simple Bookmarking</span>
-            <div class="absolute bottom-0 left-0 w-full h-1 bg-red-500"></div>
+            <div class="tab-indicator absolute bottom-0 left-0 w-full h-1 bg-red-500"></div>
         </button>
-        <button class="relative py-3 md:py-4 text-gray-500 hover:text-red-500 border-b border-gray-200 md:border-none">
+        <button id="tab-2" class="tab-button relative py-3 md:py-4 text-gray-500 hover:text-red-500 border-b border-gray-200 md:border-none" data-tab="2">
             <span class="relative block">Speedy Searching</span>
-            <div class="absolute bottom-0 left-0 w-full h-1 bg-transparent"></div>
+            <div class="tab-indicator absolute bottom-0 left-0 w-full h-1 bg-transparent"></div>
         </button>
-        <button class="relative py-3 md:py-4 text-gray-500 hover:text-red-500 border-b border-gray-200 md:border-none">
+        <button id="tab-3" class="tab-button relative py-3 md:py-4 text-gray-500 hover:text-red-500 border-b border-gray-200 md:border-none" data-tab="3">
             <span class="relative block">Easy Sharing</span>
-            <div class="absolute bottom-0 left-0 w-full h-1 bg-transparent"></div>
+            <div class="tab-indicator absolute bottom-0 left-0 w-full h-1 bg-transparent"></div>
         </button>
         </div>
 
         <!-- Panels -->
-        <div class="mt-12 flex flex-col md:flex-row items-center gap-12">
+        <!-- Panel 1: Simple Bookmarking -->
+        <div id="panel-1" class="tab-panel mt-12 flex flex-col md:flex-row items-center gap-12">
         <div class="relative flex-1">
-            <img src="src/images/illustration-features-tab-1.svg" alt="Feature illustration" class="relative z-10 w-full max-w-md mx-auto">
+            <img src="src/images/illustration-features-tab-1.svg" alt="Simple Bookmarking illustration" class="relative z-10 w-full max-w-md mx-auto">
             <div class="absolute top-[20%] md:-left-[30%] w-[140%] md:w-[80%] h-[80%] bg-[#5267DF] rounded-r-full -z-10"></div>
         </div>
         <div class="flex-1 text-center md:text-left">
@@ -116,6 +117,42 @@
             gives you complete control over how you manage your favourite sites.
             </p>
             <a href="#" class="px-6 py-3 bg-[#5267DF] text-white rounded-md shadow hover:bg-blue-700">More Info</a>
+        </div>
+        </div>
+
+        <!-- Panel 2: Speedy Searching -->
+        <div id="panel-2" class="tab-panel mt-12 hidden">
+        <div class="flex flex-col md:flex-row items-center gap-12">
+            <div class="relative flex-1">
+                <img src="src/images/illustration-features-tab-2.svg" alt="Speedy Searching illustration" class="relative z-10 w-full max-w-md mx-auto">
+                <div class="absolute top-[20%] md:-left-[30%] w-[140%] md:w-[80%] h-[80%] bg-[#5267DF] rounded-r-full -z-10"></div>
+            </div>
+            <div class="flex-1 text-center md:text-left">
+                <h3 class="text-2xl font-medium text-gray-900 mb-4">Intelligent search</h3>
+                <p class="text-gray-500 mb-6">
+                Our powerful search feature will help you find saved sites in no time at all. 
+                No need to trawl through all of your bookmarks.
+                </p>
+                <a href="#" class="px-6 py-3 bg-[#5267DF] text-white rounded-md shadow hover:bg-blue-700">More Info</a>
+            </div>
+        </div>
+        </div>
+
+        <!-- Panel 3: Easy Sharing -->
+        <div id="panel-3" class="tab-panel mt-12 hidden">
+        <div class="flex flex-col md:flex-row items-center gap-12">
+            <div class="relative flex-1">
+                <img src="src/images/illustration-features-tab-3.svg" alt="Easy Sharing illustration" class="relative z-10 w-full max-w-md mx-auto">
+                <div class="absolute top-[20%] md:-left-[30%] w-[140%] md:w-[80%] h-[80%] bg-[#5267DF] rounded-r-full -z-10"></div>
+            </div>
+            <div class="flex-1 text-center md:text-left">
+                <h3 class="text-2xl font-medium text-gray-900 mb-4">Share your bookmarks</h3>
+                <p class="text-gray-500 mb-6">
+                Easily share your bookmarks and collections with others. Create a shareable 
+                link that you can send at the click of a button.
+                </p>
+                <a href="#" class="px-6 py-3 bg-[#5267DF] text-white rounded-md shadow hover:bg-blue-700">More Info</a>
+            </div>
         </div>
         </div>
     </div>
