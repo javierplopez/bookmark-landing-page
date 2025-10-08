@@ -341,6 +341,9 @@
   .max-w-6xl {
     max-width: var(--container-6xl);
   }
+  .max-w-\[280px\] {
+    max-width: 280px;
+  }
   .max-w-md {
     max-width: var(--container-md);
   }
