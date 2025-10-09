@@ -34,5 +34,5 @@ The project is built **iteratively and progressively**, starting with pure HTML 
 Clone the repository and navigate into the project folder:
 
 ```bash
-git clone https://github.com/<username>/bookmark-landing-page.git
+git clone https://github.com/javierplopez/bookmark-landing-page.git
 cd bookmark-landing-page
