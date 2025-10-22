@@ -75,16 +75,48 @@
                 </div>
 
                 <div class="features_panels">
-                    <div role="tabpanel" id="panel-1" aria-labelledby="tab-1" class="features_panel">
+                    <div role="tabpanel" id="panel-1" aria-labelledby="tab-1" class="features_panel features_panel-active">
                         <div class="feature">
                             <div class="feature_image">
-                                <img src="src/images/illustration-features-tab-1.svg" alt="Tab 1 image">
+                                <img src="src/images/illustration-features-tab-1.svg" alt="Simple bookmarking interface">
                             </div>
                             <div class="feature_content">
                                 <h3 class="feature_title">Bookmark in one click</h3>
                                 <p class="feature_text">
                                     Organize your bookmarks however you like. Our simple drag-and-drop interface 
                                     gives you complete control over how you manage your favourite sites.
+                                </p>
+                                <button type="button" class="button button-primary">More Info</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div role="tabpanel" id="panel-2" aria-labelledby="tab-2" class="features_panel" hidden>
+                        <div class="feature">
+                            <div class="feature_image">
+                                <img src="src/images/illustration-features-tab-2.svg" alt="Fast searching interface">
+                            </div>
+                            <div class="feature_content">
+                                <h3 class="feature_title">Intelligent search</h3>
+                                <p class="feature_text">
+                                    Our powerful search feature will help you find saved sites in no time at all. 
+                                    No need to trawl through all of your bookmarks.
+                                </p>
+                                <button type="button" class="button button-primary">More Info</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div role="tabpanel" id="panel-3" aria-labelledby="tab-3" class="features_panel" hidden>
+                        <div class="feature">
+                            <div class="feature_image">
+                                <img src="src/images/illustration-features-tab-3.svg" alt="Easy sharing interface">
+                            </div>
+                            <div class="feature_content">
+                                <h3 class="feature_title">Share your bookmarks</h3>
+                                <p class="feature_text">
+                                    Easily share your bookmarks and collections with others. Create a shareable 
+                                    link that you can send at the click of a button.
                                 </p>
                                 <button type="button" class="button button-primary">More Info</button>
                             </div>
@@ -145,57 +177,57 @@
                 </header>
 
                 <div class="accordion">
-                    <div class="accordion_item">
-                        <button class="accordion_trigger" aria-expanded="false" aria-controls="faq1">
+                    <details class="accordion_item">
+                        <summary class="accordion_trigger">
                             What is Bookmark?
-                            <img src="src/images/icon-arrow.svg" alt="Expand FAQ" aria-hidden="true">
-                        </button>
-                        <div class="accordion_content" id="faq1" hidden>
+                            <img src="src/images/icon-arrow.svg" alt="" aria-hidden="true">
+                        </summary>
+                        <div class="accordion_content">
                             <p>
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt 
                                 justo eget ultricies fringilla. Phasellus blandit ipsum quis quam ornare mattis.
                             </p>
                         </div>
-                    </div>
+                    </details>
 
-                    <div class="accordion_item">
-                        <button class="accordion_trigger" aria-expanded="false" aria-controls="faq2">
+                    <details class="accordion_item">
+                        <summary class="accordion_trigger">
                             How can I request a new browser?
-                            <img src="src/images/icon-arrow.svg" alt="Expand FAQ" aria-hidden="true">
-                        </button>
-                        <div class="accordion_content" id="faq2" hidden>
+                            <img src="src/images/icon-arrow.svg" alt="" aria-hidden="true">
+                        </summary>
+                        <div class="accordion_content">
                             <p>
                                 Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, 
                                 ultricies non ligula. Suspendisse imperdiet.
                             </p>
                         </div>
-                    </div>
+                    </details>
 
-                    <div class="accordion_item">
-                        <button class="accordion_trigger" aria-expanded="false" aria-controls="faq3">
+                    <details class="accordion_item">
+                        <summary class="accordion_trigger">
                             Is there a mobile app?
-                            <img src="src/images/icon-arrow.svg" alt="Expand FAQ" aria-hidden="true">
-                        </button>
-                        <div class="accordion_content" id="faq3" hidden>
+                            <img src="src/images/icon-arrow.svg" alt="" aria-hidden="true">
+                        </summary>
+                        <div class="accordion_content">
                             <p>
                                 Sed consectetur quam id neque fermentum accumsan. Praesent luctus vestibulum dolor, 
                                 ut condimentum urna vulputate eget.
                             </p>
                         </div>
-                    </div>
+                    </details>
 
-                    <div class="accordion_item">
-                        <button class="accordion_trigger" aria-expanded="false" aria-controls="faq4">
+                    <details class="accordion_item">
+                        <summary class="accordion_trigger">
                             What about other Chromium browsers?
-                            <img src="src/images/icon-arrow.svg" alt="Expand FAQ" aria-hidden="true">
-                        </button>
-                        <div class="accordion_content" id="faq4" hidden>
+                            <img src="src/images/icon-arrow.svg" alt="" aria-hidden="true">
+                        </summary>
+                        <div class="accordion_content">
                             <p>
                                 Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, 
                                 at euismod dui. Aliquam vitae neque eget nisl gravida pellentesque non ut velit.
                             </p>
                         </div>
-                    </div>
+                    </details>
                 </div>
 
                 <div class="faq_cta">
@@ -244,5 +276,7 @@
             </div>
         </div>
     </footer>
+
+    <script src="src/js/main.js"></script>
 </body>
 </html>
