@@ -34,10 +34,13 @@
 
     &_text {
         color: $color-text;
-        margin-bottom: $spacing-xl;
+        margin-bottom: $spacing-lg;
     }
 
-
+    &_dots {
+        width: 100%;
+        margin: $spacing-lg 0;
+    }
 
     @media (min-width: 48em) {
         &:nth-child(2) {

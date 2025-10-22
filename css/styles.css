@@ -322,7 +322,11 @@ textarea:not([rows]) {
 }
 .card_text {
   color: hsl(229, 8%, 60%);
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
+}
+.card_dots {
+  width: 100%;
+  margin: 1.5rem 0;
 }
 @media (min-width: 48em) {
   .card:nth-child(2) {
