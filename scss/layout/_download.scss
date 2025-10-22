@@ -37,10 +37,7 @@
         margin-bottom: $spacing-xl;
     }
 
-    &_dots {
-        display: none;
-        margin: $spacing-lg $spacing-xl;
-    }
+
 
     @media (min-width: 48em) {
         &:nth-child(2) {

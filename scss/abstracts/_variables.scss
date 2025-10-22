@@ -4,13 +4,10 @@ $color-secondary: hsl(0, 94%, 66%);
 $color-text: hsl(229, 8%, 60%);
 $color-heading: hsl(229, 31%, 21%);
 $color-white: hsl(0, 0%, 100%);
-$color-bg: hsl(0, 0%, 97%);
 
 // Typography
 $font-primary: 'Rubik', sans-serif;
-$font-size-base: 1rem;
 $font-size-sm: 0.875rem;
-$font-size-lg: 1.125rem;
 $font-size-xl: 1.5rem;
 $font-size-2xl: 2rem;
 $font-size-3xl: 2.5rem;
@@ -20,7 +17,6 @@ $font-weight-normal: 400;
 $font-weight-medium: 500;
 
 // Spacing
-$spacing-xs: 0.25rem;
 $spacing-sm: 0.5rem;
 $spacing-md: 1rem;
 $spacing-lg: 1.5rem;
@@ -34,21 +30,11 @@ $container-max-width: 69.375rem;
 
 // Border radius
 $border-radius-sm: 0.25rem;
-$border-radius-md: 0.5rem;
 $border-radius-lg: 0.75rem;
 $border-radius-full: 9999px;
 
 // Transitions
 $transition-base: 0.3s ease-in-out;
-$transition-fast: 0.15s ease-in-out;
-
-// Z-index
-$z-index-dropdown: 1000;
-$z-index-sticky: 1020;
-$z-index-fixed: 1030;
-$z-index-modal: 1040;
-$z-index-popover: 1050;
-$z-index-tooltip: 1060;
 
 // Breakpoints
 $breakpoint-mobile: 48em;

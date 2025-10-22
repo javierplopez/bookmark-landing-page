@@ -181,13 +181,10 @@ textarea:not([rows]) {
   color: hsl(0, 94%, 66%);
 }
 .features_panel {
-  display: none !important;
+  display: none;
 }
 .features_panel--active, .features_panel[aria-selected=true] {
-  display: block !important;
-}
-.features_panel[hidden] {
-  display: none !important;
+  display: block;
 }
 
 .feature {
@@ -326,10 +323,6 @@ textarea:not([rows]) {
 .card_text {
   color: hsl(229, 8%, 60%);
   margin-bottom: 2rem;
-}
-.card_dots {
-  display: none;
-  margin: 1.5rem 2rem;
 }
 @media (min-width: 48em) {
   .card:nth-child(2) {
