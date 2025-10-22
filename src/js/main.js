@@ -17,19 +17,16 @@ document.addEventListener('DOMContentLoaded', function() {
     menuToggle.addEventListener('click', toggleMenu);
     menuClose.addEventListener('click', toggleMenu);
 
-    // Cerrar menú al hacer clic en los enlaces
     document.querySelectorAll('#mobile-menu a').forEach(link => {
         link.addEventListener('click', () => {
             toggleMenu();
         });
     });
 
-    // Funcionalidad de las tabs
     const tabButtons = document.querySelectorAll('.tab-button');
     const tabPanels = document.querySelectorAll('.tab-panel');
 
     function switchTab(targetTab) {
-        // Desactivar todas las tabs
         tabButtons.forEach(button => {
             button.classList.remove('active');
             button.classList.remove('text-gray-900');
@@ -40,12 +37,10 @@ document.addEventListener('DOMContentLoaded', function() {
             indicator.classList.add('bg-transparent');
         });
 
-        // Ocultar todos los paneles
         tabPanels.forEach(panel => {
             panel.classList.add('hidden');
         });
 
-        // Activar la tab seleccionada
         const activeButton = document.querySelector(`[data-tab="${targetTab}"]`);
         activeButton.classList.add('active');
         activeButton.classList.remove('text-gray-500');
@@ -55,12 +50,10 @@ document.addEventListener('DOMContentLoaded', function() {
         activeIndicator.classList.remove('bg-transparent');
         activeIndicator.classList.add('bg-red-500');
 
-        // Mostrar el panel correspondiente
         const activePanel = document.getElementById(`panel-${targetTab}`);
         activePanel.classList.remove('hidden');
     }
 
-    // Agregar event listeners a los botones de las tabs
     tabButtons.forEach(button => {
         button.addEventListener('click', () => {
             const targetTab = button.getAttribute('data-tab');
