@@ -1,2 +1,8 @@
-# Archivos de sistema macOS
+# macOS system files
 .DS_Store
+
+# Node.js dependencies
+node_modules/
+
+# Visual Studio Code configuration
+.vscode
