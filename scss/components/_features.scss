@@ -40,10 +40,15 @@
   }
 
   &_panel {
-    display: block;
+    display: none !important;
 
+    &--active,
     &[aria-selected="true"] {
-      display: block;
+      display: block !important;
+    }
+
+    &[hidden] {
+      display: none !important;
     }
   }
 }
